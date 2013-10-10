@@ -64,5 +64,8 @@ class LiipThemeExtension extends Extension
         }
 
         $loader->load('templating.xml');
+
+        //add by zloyag for caching assetic blocks (stylesheets, javascripts) in twig templates by template|theme
+        $loader->load('templating_twig.xml');
     }
 }
